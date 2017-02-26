@@ -79,3 +79,5 @@ void MainWindow::on_comboBox_currentIndexChanged(int index)
         hourtime = ui->spinBox->value() * 3600;
     }
 }
+
+//testcode for commit
