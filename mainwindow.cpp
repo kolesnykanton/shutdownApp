@@ -62,7 +62,7 @@ void MainWindow::on_buttonBox_clicked(QAbstractButton *button)
 void MainWindow::on_listWidget_itemClicked(QListWidgetItem *item)
 {
     if(item->text()=="Shutdown"){
-            command = "shutdown /s /t " + to_string(ui->spinBox->value());
+            command = "shutdown /s /t " + to_string(ui->spinBox->value()) + force;
     }
     else if(item->text()=="Hibernate"){
         command = "timeout /t " + to_string(ui->spinBox->value()) + hiber;
