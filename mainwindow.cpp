@@ -49,7 +49,7 @@ void MainWindow::on_buttonBox_clicked(QAbstractButton *button)
         close();
         }
     else if(ui->buttonBox->standardButton(button) == QDialogButtonBox::Ok) {
-        //system(command.c_str());
+        system(command.c_str());
 
         }
     else {
@@ -62,7 +62,7 @@ void MainWindow::on_buttonBox_clicked(QAbstractButton *button)
 void MainWindow::on_listWidget_itemClicked(QListWidgetItem *item)
 {
     if(item->text()=="Shutdown"){
-            command = "shutdown /s /t " + to_string(ui->spinBox->value()) + force;
+            command = "shutdown /s /t " + to_string(ui->spinBox->value());
     }
     else if(item->text()=="Hibernate"){
         command = "timeout /t " + to_string(ui->spinBox->value()) + hiber;
