@@ -18,7 +18,6 @@ using namespace std;
 
 string command;
 string hiber = " /nobreak & shutdown /h";
-string force = "/f";
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -26,7 +25,6 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    connect(ui->buttonBox, SIGNAL(clicked (QAbstractButton*)), this, SLOT(buttonsClicked(QAbstractButton*)));
     connect(ui->listWidget,SIGNAL(itemClicked(QListWidgetItem*)),this,SLOT(itemClicked(QListWidgetItem*)));
     connect(ui->spinBox, SIGNAL(valueChanged(int)),this, SLOT(on_spinboxValueChanged(int)));
 }
@@ -38,26 +36,22 @@ MainWindow::~MainWindow()
 }
 
 
-void MainWindow::on_spinBox_valueChanged(int arg1)
+
+
+void MainWindow::on_closeButton_clicked()
 {
-    timeout = arg1;
+    close();
 }
 
-void MainWindow::on_buttonBox_clicked(QAbstractButton *button)
+void MainWindow::on_okButton_clicked()
 {
-    if(ui->buttonBox->standardButton(button) == QDialogButtonBox::Close) {
-        close();
-        }
-    else if(ui->buttonBox->standardButton(button) == QDialogButtonBox::Ok) {
-        system(command.c_str());
-
-        }
-    else {
-        system("shutdown -a");
-        }
+    system(command.c_str());
 }
 
-
+void MainWindow::on_abortButton_clicked()
+{
+    system("shutdown -a");
+}
 
 void MainWindow::on_listWidget_itemClicked(QListWidgetItem *item)
 {
@@ -70,9 +64,6 @@ void MainWindow::on_listWidget_itemClicked(QListWidgetItem *item)
 }
 
 
-
-
-
 void MainWindow::on_comboBox_currentIndexChanged(int index)
 {
     if(index == 0){
@@ -80,5 +71,20 @@ void MainWindow::on_comboBox_currentIndexChanged(int index)
     }
 }
 
-//testcode for ine more
 
+void MainWindow::on_spinBox_valueChanged(int arg1)
+{
+    timeout = arg1;
+}
+
+
+
+//void MainWindow::on_checkBoxForce_stateChanged(int arg1)
+//{
+//    if(arg1 == Qt.Unchecked){
+//        force = "";
+//    }
+//    else {
+//        force = " /f";
+//    }
+//}

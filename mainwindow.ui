@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>231</width>
-    <height>341</height>
+    <width>275</width>
+    <height>365</height>
    </rect>
   </property>
   <property name="palette">
@@ -168,31 +168,6 @@
    <string/>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QDialogButtonBox" name="buttonBox">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>220</y>
-      <width>237</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="mouseTracking">
-     <bool>false</bool>
-    </property>
-    <property name="layoutDirection">
-     <enum>Qt::LeftToRight</enum>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-    <property name="standardButtons">
-     <set>QDialogButtonBox::Close|QDialogButtonBox::Discard|QDialogButtonBox::Ok</set>
-    </property>
-    <property name="centerButtons">
-     <bool>false</bool>
-    </property>
-   </widget>
    <widget class="QCheckBox" name="checkBoxForce">
     <property name="geometry">
      <rect>
@@ -466,14 +441,53 @@
      </item>
     </widget>
    </widget>
+   <widget class="QPushButton" name="closeButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="okButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>222</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ok</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="abortButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Abort</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>231</width>
-     <height>24</height>
+     <width>275</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuOptions">
