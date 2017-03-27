@@ -25,7 +25,6 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    connect(ui->listWidget,SIGNAL(itemClicked(QListWidgetItem*)),this,SLOT(itemClicked(QListWidgetItem*)));
     connect(ui->spinBox, SIGNAL(valueChanged(int)),this, SLOT(on_spinboxValueChanged(int)));
 }
 
@@ -38,14 +37,18 @@ MainWindow::~MainWindow()
 
 
 
-void MainWindow::on_closeButton_clicked()
+
+
+
+void MainWindow::on_shutdownButton_clicked()
 {
-    close();
+    command = "shutdown /s /t " + to_string(ui->spinBox->value());
+    system(command.c_str());
 }
 
-void MainWindow::on_okButton_clicked()
+void MainWindow::on_hibernateButton_clicked()
 {
-    system(command.c_str());
+
 }
 
 void MainWindow::on_abortButton_clicked()
@@ -53,16 +56,10 @@ void MainWindow::on_abortButton_clicked()
     system("shutdown -a");
 }
 
-void MainWindow::on_listWidget_itemClicked(QListWidgetItem *item)
+void MainWindow::on_closeButton_clicked()
 {
-    if(item->text()=="Shutdown"){
-            command = "shutdown /s /t " + to_string(ui->spinBox->value());
-    }
-    else if(item->text()=="Hibernate"){
-        command = "timeout /t " + to_string(ui->spinBox->value()) + hiber;
-    }
+    close();
 }
-
 
 void MainWindow::on_comboBox_currentIndexChanged(int index)
 {
@@ -77,7 +74,20 @@ void MainWindow::on_spinBox_valueChanged(int arg1)
     timeout = arg1;
 }
 
+//void MainWindow::on_okButton_clicked()
+//{
+//    system(command.c_str());
+//}
 
+//void MainWindow::on_listWidget_itemClicked(QListWidgetItem *item)
+//{
+//    if(item->text()=="Shutdown"){
+//            command = "shutdown /s /t " + to_string(ui->spinBox->value());
+//    }
+//    else if(item->text()=="Hibernate"){
+//        command = "timeout /t " + to_string(ui->spinBox->value()) + hiber;
+//    }
+//}
 
 //void MainWindow::on_checkBoxForce_stateChanged(int arg1)
 //{
@@ -88,3 +98,5 @@ void MainWindow::on_spinBox_valueChanged(int arg1)
 //        force = " /f";
 //    }
 //}
+
+
