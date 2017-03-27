@@ -10,7 +10,13 @@
         <file>qt resouce/Akrobat-Thin.otf</file>
         <file>qt resouce/backgr.png</file>
         <file>qt resouce/backgr480.png</file>
-        <file>qt resouce/icon.png</file>
-        <file>qt resouce/icon30.png</file>
+        <file>qt resouce/Abort.png</file>
+        <file>qt resouce/Abort30.png</file>
+        <file>qt resouce/Hibernate.png</file>
+        <file>qt resouce/Hibernate30.png</file>
+        <file>qt resouce/icon_1.png</file>
+        <file>qt resouce/icon_130.png</file>
+        <file>qt resouce/Shutdown.png</file>
+        <file>qt resouce/Shutdown30.png</file>
     </qresource>
 </RCC>
