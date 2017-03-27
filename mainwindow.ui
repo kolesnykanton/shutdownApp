@@ -184,7 +184,8 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <property name="styleSheet">
-    <string notr="true">.QWidget {background-image: url(:/C:/Users/Oswin_Oswald/Desktop/qt resouce/backgr.png);}
+    <string notr="true">.QWidget {background-image: url(:/qt resouce/backgr.png);
+}
 </string>
    </property>
    <widget class="QCheckBox" name="checkBoxForce">
@@ -511,9 +512,9 @@
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>170</y>
-      <width>101</width>
-      <height>40</height>
+      <y>119</y>
+      <width>111</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -593,7 +594,8 @@
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {background: transparent; 
-border-image: url(:/C:/Users/Oswin_Oswald/Desktop/qt resouce/but02.png);}</string>
+border-image: url(:/qt resouce/butOK.png);
+}</string>
     </property>
     <property name="text">
      <string/>

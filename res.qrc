@@ -1,9 +1,16 @@
 <RCC>
     <qresource prefix="/">
-        <file>C:/Users/Oswin_Oswald/Desktop/qt resouce/backgr.png</file>
-        <file>C:/Users/Oswin_Oswald/Desktop/qt resouce/backgr-01.png</file>
-        <file>C:/Users/Oswin_Oswald/Desktop/qt resouce/but.png</file>
-        <file>C:/Users/Oswin_Oswald/Desktop/qt resouce/but02.png</file>
-        <file>C:/Users/Oswin_Oswald/Desktop/qt resouce/but03.png</file>
+        <file>qt resouce/Akrobat-Black.otf</file>
+        <file>qt resouce/Akrobat-Bold.otf</file>
+        <file>qt resouce/Akrobat-ExtraBold.otf</file>
+        <file>qt resouce/Akrobat-ExtraLight.otf</file>
+        <file>qt resouce/Akrobat-Light.otf</file>
+        <file>qt resouce/Akrobat-Regular.otf</file>
+        <file>qt resouce/Akrobat-SemiBold.otf</file>
+        <file>qt resouce/Akrobat-Thin.otf</file>
+        <file>qt resouce/backgr.png</file>
+        <file>qt resouce/backgr480.png</file>
+        <file>qt resouce/butOK.png</file>
+        <file>qt resouce/butOK250.png</file>
     </qresource>
 </RCC>
