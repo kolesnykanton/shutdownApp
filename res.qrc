@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>C:/Users/Oswin_Oswald/Desktop/qt resouce/backgr.png</file>
+        <file>C:/Users/Oswin_Oswald/Desktop/qt resouce/backgr-01.png</file>
+        <file>C:/Users/Oswin_Oswald/Desktop/qt resouce/but.png</file>
+        <file>C:/Users/Oswin_Oswald/Desktop/qt resouce/but02.png</file>
+        <file>C:/Users/Oswin_Oswald/Desktop/qt resouce/but03.png</file>
+    </qresource>
+</RCC>
