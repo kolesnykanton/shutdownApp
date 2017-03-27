@@ -177,7 +177,17 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Shutdown</string>
+   <string>project1</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/qt resouce/icon.png</normaloff>:/qt resouce/icon.png</iconset>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>30</width>
+    <height>30</height>
+   </size>
   </property>
   <property name="11" stdset="0">
    <string/>
@@ -337,6 +347,8 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>

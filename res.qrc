@@ -10,7 +10,7 @@
         <file>qt resouce/Akrobat-Thin.otf</file>
         <file>qt resouce/backgr.png</file>
         <file>qt resouce/backgr480.png</file>
-        <file>qt resouce/butOK.png</file>
-        <file>qt resouce/butOK250.png</file>
+        <file>qt resouce/icon.png</file>
+        <file>qt resouce/icon30.png</file>
     </qresource>
 </RCC>
