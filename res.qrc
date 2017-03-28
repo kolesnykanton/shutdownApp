@@ -18,5 +18,9 @@
         <file>qt resouce/icon_130.png</file>
         <file>qt resouce/Shutdown.png</file>
         <file>qt resouce/Shutdown30.png</file>
+        <file>qt resouce/forse.png</file>
+        <file>qt resouce/forse30.png</file>
+        <file>qt resouce/forse2.png</file>
+        <file>qt resouce/forse230.png</file>
     </qresource>
 </RCC>

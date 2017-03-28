@@ -201,14 +201,26 @@
    <widget class="QCheckBox" name="checkBoxForce">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>170</y>
-      <width>70</width>
-      <height>17</height>
+      <x>25</x>
+      <y>180</y>
+      <width>140</width>
+      <height>60</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox::indicator:unchecked {
+    border-image: url(:/qt resouce/forse2.png);;
+     width: 140px;
+     height: 60px;
+ }
+QCheckBox::indicator:checked {
+    border-image: url(:/qt resouce/forse.png);;  
+   width: 140px;
+     height: 60px;
+ }</string>
+    </property>
     <property name="text">
-     <string>force</string>
+     <string/>
     </property>
     <property name="tristate">
      <bool>false</bool>
@@ -247,6 +259,12 @@
     <widget class="QSpinBox" name="spinBox">
      <property name="focusPolicy">
       <enum>Qt::TabFocus</enum>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::PlusMinus</enum>
+     </property>
+     <property name="specialValueText">
+      <string/>
      </property>
      <property name="maximum">
       <number>99999999</number>
@@ -311,7 +329,7 @@
     <property name="geometry">
      <rect>
       <x>25</x>
-      <y>230</y>
+      <y>250</y>
       <width>250</width>
       <height>60</height>
      </rect>
@@ -351,7 +369,7 @@
     <property name="geometry">
      <rect>
       <x>25</x>
-      <y>310</y>
+      <y>320</y>
       <width>250</width>
       <height>60</height>
      </rect>

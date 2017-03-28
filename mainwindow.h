@@ -33,8 +33,6 @@ private slots:
 
     void on_comboBox_currentIndexChanged(int index);
 
-    void on_closeButton_clicked();
-
     void on_abortButton_clicked();
 
     //void on_checkBoxForce_stateChanged(int arg1);

@@ -56,11 +56,6 @@ void MainWindow::on_abortButton_clicked()
     system("shutdown -a");
 }
 
-void MainWindow::on_closeButton_clicked()
-{
-    close();
-}
-
 void MainWindow::on_comboBox_currentIndexChanged(int index)
 {
     if(index == 0){
